@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
+import SpecialProduct from '../components/SpecialProduct';
 
 import Mainbanner from '../images/main-banner-1.jpg';
 import catbanner1 from '../images/catbanner-01.jpg';
@@ -24,6 +25,10 @@ import brand7 from '../images/brand-07.png';
 import brand8 from '../images/brand-08.png';
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
+import famous1 from '../images/famous-1.webp';
+import famous2 from '../images/famous-2.webp';
+import famous3 from '../images/famous-3.webp';
+import famous4 from '../images/famous-4.webp';
 
 
 const Home = () => {
@@ -243,11 +248,91 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="blog-wrapper py-5 home-wrapper-2">
+      <section className="featured-wrapper py-5 home-wrapper-2">
         <div className="container-xl">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Feature Collection</h3>
+            </div>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+          </div>
+        </div>
+      </section>
+
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous1} className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $399or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous2} className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Big Screen</h5>
+                  <h6 className="text-dark">Smart Watch Series 7</h6>
+                  <p className="text-dark">From $399or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous3} className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Big Screen</h5>
+                  <h6 className="text-dark">Smart Watch Series 7</h6>
+                  <p className="text-dark">From $399or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src={famous4} className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className='text-dark'>Big Screen</h5>
+                  <h6 className='text-dark'>Smart Watch Series 7</h6>
+                  <p className='text-dark'>From $399or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+        </div>
+        </div>
+      </section>
+
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Popular Products</h3>
             </div>
             <ProductCard/>
             <ProductCard/>

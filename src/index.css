@@ -25,7 +25,7 @@
     font-size: 26px;
     line-height: 32px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 body{
@@ -58,8 +58,8 @@ a{
     background-color: var(--color-232f3e);
     color: white;
     font-size: 14px;
-    padding: 13px 33px;
-    border-radius: 15px;
+    padding: 9px 18px;
+    border-radius: 10px;
 }
 
 .button:hover{
@@ -77,13 +77,26 @@ a{
     background-color: var(--color-131921);
 }
 
+.header-name{
+    font-size: 30px;
+}
+
 .header-upper .input-group-text{
     background-color: var(--color-febd69);
 }
 
 .header-upper-links img{
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
+}
+
+.header-upper-links p{
+    font-size: 16px;
+}
+
+.cart{
+    top: 9%;
+    left: 55%;
 }
 
 .header-bottom{
@@ -232,15 +245,12 @@ footer .input-group-text{
 }
 
 .blog-content{
-    padding: 15px;
+    padding: 12px;
 }
 
 .blog-content .date{
-    font-size: 13px;
-    line-height: 24px;
+    font-size: 12px;
     font-weight: 400;
-    letter-spacing: 0;
-    text-transform: uppercase;
     color: var(--color-777777);
     padding: 0;
 }
@@ -252,7 +262,7 @@ footer .input-group-text{
 
 .blog-content p.desc{
     font-size: 13px;
-    line-height: 22px;
+    line-height: 18px;
     color: var(--color-777777);
 }
 
@@ -261,6 +271,27 @@ footer .input-group-text{
     padding: 15px;
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card .product-image img{
+    object-fit: contain;
+}
+
+.product-card .product-image > img:last-child{
+    display: none;
+}
+
+.product-card:hover .product-image > img:nth-child(1){
+    display: none;
+}
+
+.product-card:hover .product-image > img:last-child{
+    display: block;
+}
+
+.product-card:hover .action-bar{
+    right: 13px;
 }
 
 .product-card .product-details h6{
@@ -276,4 +307,54 @@ footer .input-group-text{
 .product-card .product-details p.price{
     color: var(--color--1c1c1v);
     font-size: 16px;
+}
+
+.action-bar{
+    top: 10%;
+    right: -23%;
+    transition: 0.3s;
+}
+
+.wishlist-icon{
+    top: 3%;
+    right: 15px;
+}
+
+/* Special Products */
+.special-product-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Famous card */
+.famous-card .famous-content{
+    top: 9%;
+    left: 5%;
+}
+
+.famous-card img{
+    border-radius: 10px;
+}
+
+.famous-content h5{
+    font-size: 12px;
+    line-height: 10px;
+    color: white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.famous-content h6{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.famous-content p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 100;
+    color: white;
 }

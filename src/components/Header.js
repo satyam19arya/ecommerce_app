@@ -11,13 +11,13 @@ const Header = () => {
   return (
     <>
       <header className="header-top-strip py-3">
-        <div className='container-xxl'>
-          <div className="row">
+        <div className='container-xl'>
+          <div className="row d-flex align-items-center">
             <div className="col-6">
               <p className='text-white mb-0'>Free Shipping Over $100 & Free Returns</p>
             </div>
             <div className="col-6">
-              <p className='text-end text-white'>Contact: <a href="tel:+91 9452851038">+91 9452851038</a></p>
+              <p className='text-end text-white mb-0'>Contact: <a href="tel:+91 9452851038">+91 9452851038</a></p>
             </div>
           </div>
         </div>
@@ -26,11 +26,11 @@ const Header = () => {
       <header className="header-upper py-3">
         <div className='container-xxl'>
           <div className="row align-items-center">
-            <div className="col-2">
-              <h2><Link className="text-white">Amazon</Link></h2>
+            <div className="col-2 d-flex justify-content-center">
+              <h2 className='header-name'><Link className="text-white">Amazon</Link></h2>
             </div>
 
-            <div className="col-5">
+            <div className="col-6">
               <div className="input-group">
                 <input
                   type="text"
@@ -44,35 +44,34 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="col-5">
+            <div className="col-4">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
-                <div>
+                <div className="header-icon">
                   <Link className="d-flex align-items-center gap-8 text-white">
                      <img src={Compare} alt="compare" />
-                     <p className="mb-0">Compare <br/> Products</p>
+                     <p className="mb-0">Compare</p>
                   </Link>
                 </div>
 
                 <div>
                   <Link className="d-flex align-items-center gap-8 text-white">
                      <img src={Wishlist} alt="wishlist" />
-                     <p className="mb-0">Favourite <br/> wishlist</p>
+                     <p className="mb-0">Wishlist</p>
                   </Link>
                 </div>
 
                 <div>
                   <Link className="d-flex align-items-center gap-8 text-white">
                      <img src={Login} alt="user" />
-                     <p className="mb-0">Log in <br/> My Account</p>
+                     <p className="mb-0">Log in <br/></p>
                   </Link>
                 </div>
 
-                <div>
+                <div className='position-relative p-3'>
                   <Link className="d-flex align-items-center gap-8 text-white">
                     <img src={Cart} alt="cart" />
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center position-absolute cart">
                       <span className="badge bg-white text-dark">0</span>
-                      <p>$500</p>
                     </div>
                   </Link>
                 </div>
