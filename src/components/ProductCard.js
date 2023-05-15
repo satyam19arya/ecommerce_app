@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
-import watch from '../images/watch.jpg';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import watch from '../images/watch.jpg';
 import prodcompare from '../images/prodcompare.svg';
 import view from '../images/view.svg';
 import addcart from '../images/add-cart.svg';
 import wish from '../images/wish.svg';
 import watch1 from '../images/watch1.jpg';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  let location = useLocation();
+
   return (
-    <div className="col-3">
+    <div className={`${location.pathname === "/store" ? `gr-${props.grid}` : "col-3"}`}>
       <Link className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
           <Link>
@@ -25,6 +28,7 @@ const ProductCard = () => {
           <h6 className="brand">Havels</h6>
           <h5 className="product-title">Kids headphone bulk 10 pack for students</h5>
           <ReactStars count={5} size={24} value='3' edit={false} activeColor="#ffd700" />
+          <p className={`description ${props.grid === 12 ? "d-block" : "d-none"}`}>A portable timepiece intended to be carried or worn by a person.</p>
           <p className="price">$100</p>
         </div>
         <div className="action-bar position-absolute">

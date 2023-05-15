@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <header className="header-top-strip py-3">
-        <div className='container-xl'>
+        <div className='container-xxl'>
           <div className="row d-flex align-items-center">
             <div className="col-6">
               <p className='text-white mb-0'>Free Shipping Over $100 & Free Returns</p>
@@ -88,22 +88,22 @@ const Header = () => {
             <div className="col-12">
               <div className="menu-bottom d-flex align-items-center gap-30">
                 <div>
-                <div className="dropdown">
-                  <button className="btn btn-secondary dropdown-toggle border-0 bg-transparent border-0 d-flex gap-8 align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src={Menu} alt="" /><span className="me-5">Shop Categories</span>
-                  </button>
-                  <ul className="dropdown-menu">
-                    <li><Link className="dropdown-item" to="/">Action</Link></li>
-                    <li><Link className="dropdown-item" to="/">Another action</Link></li>
-                    <li><Link className="dropdown-item" to="/">Something else here</Link></li>
-                  </ul>
-                </div>
+                  <div className="dropdown">
+                    <button className="btn btn-secondary dropdown-toggle border-0 bg-transparent border-0 d-flex gap-8 align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src={Menu} alt="" /><span>Shop Categories</span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li><Link className="dropdown-item" to="/">Action</Link></li>
+                      <li><Link className="dropdown-item" to="/">Another action</Link></li>
+                      <li><Link className="dropdown-item" to="/">Something else here</Link></li>
+                    </ul>
+                  </div>
                 </div>
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-30">
                     <NavLink to="/" className="text-white">Home</NavLink>
-                    <NavLink to="/" className="text-white">Our Store</NavLink>
-                    <NavLink to="/" className="text-white">Blogs</NavLink>
+                    <NavLink to="/store" className="text-white">Our Store</NavLink>
+                    <NavLink to="/blogs" className="text-white">Blogs</NavLink>
                     <NavLink to="/contact" className="text-white">Contact</NavLink>
                   </div>
                 </div>
