@@ -486,4 +486,35 @@ footer .input-group-text{
     width: 240px;
 }
 
-/* Blogs */
+/* Contact */
+.contact{
+    text-align: center;
+    font-size: 15px;
+}
+
+.container.contact_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40%;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.contact-us{
+    color: var(--color-3b4149);
+}
+
+.container.contact_container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+    
+.container.contact_container input,textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #888;
+    resize: none;
+}
