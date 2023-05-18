@@ -27,7 +27,7 @@ const Header = () => {
         <div className='container-xxl'>
           <div className="row align-items-center">
             <div className="col-2 d-flex justify-content-center">
-              <h2 className='header-name'><Link className="text-white">Amazon</Link></h2>
+              <h2 className='header-name'><Link to="/" className="text-white">Amazon</Link></h2>
             </div>
 
             <div className="col-6">
@@ -47,28 +47,28 @@ const Header = () => {
             <div className="col-4">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div className="header-icon">
-                  <Link className="d-flex align-items-center gap-8 text-white">
+                  <Link to="/compare-product" className="d-flex align-items-center gap-8 text-white">
                      <img src={Compare} alt="compare" />
                      <p className="mb-0">Compare</p>
                   </Link>
                 </div>
 
                 <div>
-                  <Link className="d-flex align-items-center gap-8 text-white">
+                  <Link to="/wishlist" className="d-flex align-items-center gap-8 text-white">
                      <img src={Wishlist} alt="wishlist" />
                      <p className="mb-0">Wishlist</p>
                   </Link>
                 </div>
 
                 <div>
-                  <Link className="d-flex align-items-center gap-8 text-white">
+                  <Link to="/login" className="d-flex align-items-center gap-8 text-white">
                      <img src={Login} alt="user" />
                      <p className="mb-0">Log in <br/></p>
                   </Link>
                 </div>
 
                 <div className='position-relative p-3'>
-                  <Link className="d-flex align-items-center gap-8 text-white">
+                  <Link to="/cart" className="d-flex align-items-center gap-8 text-white">
                     <img src={Cart} alt="cart" />
                     <div className="d-flex flex-column align-items-center position-absolute cart">
                       <span className="badge bg-white text-dark">0</span>

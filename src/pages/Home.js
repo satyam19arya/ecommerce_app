@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import SpecialProduct from '../components/SpecialProduct';
+import { Helmet } from "react-helmet";
 
 import Mainbanner from '../images/main-banner-1.jpg';
 import catbanner1 from '../images/catbanner-01.jpg';
@@ -34,6 +35,11 @@ import famous4 from '../images/famous-4.webp';
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
+
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">

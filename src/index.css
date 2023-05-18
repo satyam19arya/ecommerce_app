@@ -18,7 +18,7 @@
     --color-f5f5f7: #f5f5f7;
     --color-ededed: #ededed;
     --color-777777: #777777;
-    --color--1c1c1v: #1c1c1c;
+    --color--1c1c1c: #1c1c1c;
 }
 
 .section-heading{
@@ -52,6 +52,10 @@ a{
 
 .gap-30{
     gap: 30px;
+}
+
+.gap-20{
+    gap: 20px;
 }
 
 .button{
@@ -270,6 +274,24 @@ footer .input-group-text{
     font-size: 13px;
     line-height: 18px;
     color: var(--color-777777);
+}
+
+/* Single Blog */
+.single-blog-card h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color--1c1c1v)
+}
+
+.single-blog-card p{
+    color: var(--color-777777);
+    font-size: 14px;
+}
+
+.single-blog-card a{
+    font-size: 16px;
+    color: var(--color-777777);
+    margin-bottom: 20px;
 }
 
 /* Product card */
@@ -504,17 +526,186 @@ footer .input-group-text{
     color: var(--color-3b4149);
 }
 
-.container.contact_container form{
+.container.contact_container form,
+.review-form form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
     
-.container.contact_container input,textarea{
+.container.contact_container input,textarea,
+.review-form input,textarea{
     width: 100%;
     padding: 0.8rem;
     border-radius: 0.5rem;
     background: transparent;
     border: 1px solid #888;
     resize: none;
+}
+
+/* Compare product */
+.compare-product-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 15px;
+}
+
+.compare-product-card .cross,
+.wishlist-card .cross{
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.compare-product-card h5.title,
+.wishlist-card .title{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--color-bf4800);
+}
+
+.compare-product-card .product-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.compare-product-card .product-detail h5{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-3b4149);
+}
+
+.compare-product-card .product-detail p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-777777);
+}
+
+/* Login */
+.login-card{
+    padding: 20px;
+    background-color: white;
+    width: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.login-card h3{
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--color-777777);
+    padding-bottom: 10px;
+}
+
+.login-card .login-button{
+    background-color: var(--color-232f3e);
+    color: white;
+    font-size: 14px;
+    padding: 9px 18px;
+    border-radius: 10px;
+}
+
+.login-card .signup{
+    background-color: var(--color-febd69);
+    color: var(--color-131921);
+}
+
+.login-card .forgot-password{
+    padding-left: 5px;
+}
+
+.login-card p{
+    font-size: 15px;
+    color: var(--color-777777);
+}
+
+/* Policy */
+.policy{
+    background-color: white;
+    padding: 30px;
+}
+
+/* Single Product */
+.description-wrapper .description,
+.review-wrapper .description{
+    color: var(--color-777777);
+}
+
+.review-head,
+.review:not(:last-child){
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.rating{
+    font-size: 20px;
+    color: var(--color-777777);
+    margin-bottom: 0;
+}
+
+.review p{
+    color: var(--color-777777);
+}
+
+.main-product-image{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-product-image img{
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: cover;
+}
+
+.main-product-image .js-image-zoom__zoomed-image{
+    left: 160px !important;
+    padding: 10px;
+    background-color: white;
+}
+
+.other-product-images{
+    background-color: white;
+    padding: 20px;
+}
+
+.other-product-images > div{
+    padding: 15px;
+    width: 48%;
+}
+
+.main-product-details{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-product-details h3.title{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color--1c1c1c);
+}
+
+.review-btn{
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.price{
+    color: var(--color-777777);
+}
+
+.product-heading{
+    font-size: 14px;
+    color: var(--color--1c1c1c);
+}
+
+.product-data{
+    font-size: 13px;
+    color: var(--color-777777);
 }

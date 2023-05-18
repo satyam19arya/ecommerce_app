@@ -39,7 +39,7 @@ const Footer = () => {
             <h4 className="text-white mb-4">Contact us</h4>
             <div>
               <address className="text-white fs-6">
-                116/6 JK Colony Jajmau Kanpur Nagar Uttar Pradesh 208010
+                116/6 JK Colony Jajmau Kanpur Nagar UP 208010
               </address>
               <a href='tel:+91 9452851038' className="text-white mt-2 d-block mb-1">+91 9452851038</a>
               <a href='mailto:satyam19arya@gmail.com' className="text-white mt-2 d-block mb-0">satyam19arya@gmail.com</a>
@@ -62,17 +62,17 @@ const Footer = () => {
           <div className="col-3">
             <h4 className="text-white mb-4">Information</h4>
             <div className="footer-link d-flex flex-column">
-              <Link className='text-white py-2 mb-1'>Privacy Policy</Link>
-              <Link className='text-white py-2 mb-1'>Refund Policy</Link>
-              <Link className='text-white py-2 mb-1'>Shipping Policy</Link>
-              <Link className='text-white py-2 mb-1'>Terms & Conditions</Link>            </div>
+              <Link to="/privacy-policy" className='text-white py-2 mb-1'>Privacy Policy</Link>
+              <Link to="/refund-policy" className='text-white py-2 mb-1'>Refund Policy</Link>
+              <Link to="/shipping-policy" className='text-white py-2 mb-1'>Shipping Policy</Link>
+              <Link to="/terms-conditions" className='text-white py-2 mb-1'>Terms & Conditions</Link>            </div>
           </div>
           <div className="col-3">
             <h4 className="text-white mb-4">Account</h4>
             <div className="footer-link d-flex flex-column">
               <Link className='text-white py-2 mb-1'>About Us</Link>
-              <Link className='text-white py-2 mb-1'>Faq</Link>
-              <Link className='text-white py-2 mb-1'>Contact</Link>
+              <Link to="/blogs" className='text-white py-2 mb-1'>Blogs</Link>
+              <Link to="/contact" className='text-white py-2 mb-1'>Contact</Link>
             </div>
           </div>
           <div className="col-2">
