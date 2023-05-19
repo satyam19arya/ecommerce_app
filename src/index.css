@@ -762,3 +762,9 @@ footer .input-group-text{
 .tax{
     color: var(--color-3b4149);
 }
+
+/* Checkout */
+.checkout-wrapper h4,h3{
+    font-size: 19px;
+    color: var(--color-3b4149);
+}
