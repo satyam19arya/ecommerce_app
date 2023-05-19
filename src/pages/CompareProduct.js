@@ -21,7 +21,7 @@ const CompareProduct = () => {
               <div className="compare-product-card position-relative">
                 <img src={cross} alt="cross" className="position-absolute cross img-fluid"/>
                 <div className="product-card-image">
-                  <img src={watch} alt="watch" />
+                  <img src={watch} alt="watch" className="img-fluid" />
                 </div>
                 <div className="compare-product-details">
                   <h5 className="title pb-2">Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet</h5>

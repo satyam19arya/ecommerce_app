@@ -147,7 +147,7 @@ const OurStore = () => {
                     </div>
                     <div className='w-50'>
                       <h5>Kids headphones bulk 10 pack multi colored for students</h5>
-                      <ReactStars count={5} size={24} value='3' edit={false} activeColor="#ffd700" />
+                      <ReactStars count={5} size={24} value={3} edit={false} activeColor="#ffd700" />
                       <b>$ 300</b>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ const OurStore = () => {
                     </div>
                     <div className='w-50'>
                       <h5>Kids headphones bulk 10 pack multi colored for students</h5>
-                      <ReactStars count={5} size={24} value='3' edit={false} activeColor="#ffd700" />
+                      <ReactStars count={5} size={24} value={3} edit={false} activeColor="#ffd700" />
                       <b>$ 300</b>
                     </div>
                   </div>

@@ -16,9 +16,9 @@ const ProductCard = (props) => {
     <div className={`${location.pathname === "/store" ? `gr-${props.grid}` : "col-3"}`}>
       <Link to="/product/:id" className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
-          <Link>
+          <button className="border-0 bg-transparent">
             <img src={wish} alt="wishlist" />
-          </Link>
+          </button>
         </div>
         <div className="product-image">
           <img src={watch} className='img-fluid' alt="productImage" />
@@ -27,21 +27,21 @@ const ProductCard = (props) => {
         <div className="product-details">
           <h6 className="brand">Havels</h6>
           <h5 className="product-title">Kids headphone bulk 10 pack for students</h5>
-          <ReactStars count={5} size={24} value='3' edit={false} activeColor="#ffd700" />
+          <ReactStars count={5} size={24} value={3} edit={false} activeColor="#ffd700" />
           <p className={`description ${props.grid === 12 ? "d-block" : "d-none"}`}>A portable timepiece intended to be carried or worn by a person.</p>
           <p className="price">$100</p>
         </div>
         <div className="action-bar position-absolute">
           <div className="d-flex flex-column gap-15">
-            <Link>
+            <button className="border-0 bg-transparent">
               <img src={prodcompare} alt="compare" />
-            </Link>
-            <Link>
+            </button>
+            <button className="border-0 bg-transparent">
               <img src={view} alt="compare" />
-            </Link>
-            <Link>
+            </button>
+            <button className="border-0 bg-transparent">
               <img src={addcart} alt="compare" />
-            </Link>
+            </button>
           </div>
         </div>
       </Link>

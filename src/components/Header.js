@@ -30,7 +30,7 @@ const Header = () => {
               <h2 className='header-name'><Link to="/" className="text-white">Amazon</Link></h2>
             </div>
 
-            <div className="col-6">
+            <div className="col-5">
               <div className="input-group">
                 <input
                   type="text"
@@ -44,7 +44,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="col-4">
+            <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div className="header-icon">
                   <Link to="/compare-product" className="d-flex align-items-center gap-8 text-white">
