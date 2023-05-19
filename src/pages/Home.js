@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import SpecialProduct from '../components/SpecialProduct';
 import { Helmet } from "react-helmet";
+import { services } from "../utils/Data";
 
 import Mainbanner from '../images/main-banner-1.jpg';
 import catbanner1 from '../images/catbanner-01.jpg';
 import catbanner2 from '../images/catbanner-02.jpg';
 import catbanner3 from '../images/catbanner-03.jpg';
 import catbanner4 from '../images/catbanner-04.jpg';
-import service1 from '../images/service-01.png';
-import service2 from '../images/service-02.png';
-import service3 from '../images/service-03.png';
-import service5 from '../images/service-05.png';
+// import service1 from '../images/service-01.png';
+// import service2 from '../images/service-02.png';
+// import service3 from '../images/service-03.png';
+// import service5 from '../images/service-05.png';
 import camera from '../images/camera.jpg';
 import tv from '../images/tv.jpg';
 import headphone from '../images/headphone.jpg';
@@ -99,7 +100,18 @@ const Home = () => {
           <div className="row">
             <div className="col-12">
               <div className="services d-flex align-items-center justify-content-between">
-                <div className="d-flex align-items-center gap-13">
+                {services?.map ((i,j) => {
+                  return (
+                    <div className="d-flex align-items-center gap-13" key={j}>
+                      <img src={i.image} alt="services" />
+                      <div>
+                        <h6>{i.title}</h6>
+                        <p className="mb-0">{i.tagline}</p>
+                      </div>
+                    </div>
+                  )
+                })}
+                {/* <div className="d-flex align-items-center gap-13">
                   <img src={service1} alt="services" />
                   <div>
                     <h6>Free Shipping</h6>
@@ -129,7 +141,7 @@ const Home = () => {
                     <h6>Secure Payments</h6>
                     <p className="mb-0">100% Protected Payment</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

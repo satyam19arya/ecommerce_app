@@ -5,7 +5,7 @@ import Compare from '../images/compare.svg';
 import Wishlist from '../images/wishlist.svg';
 import Login from '../images/user.svg';
 import Cart from '../images/cart.svg';
-import Menu from '../images/menu.svg';
+// import Menu from '../images/menu.svg';
 
 const Header = () => {
   return (
@@ -87,20 +87,20 @@ const Header = () => {
           <div className="row">
             <div className="col-12">
               <div className="menu-bottom d-flex align-items-center gap-30">
-                <div>
+                {/* <div>
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle border-0 bg-transparent border-0 d-flex gap-8 align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src={Menu} alt="" /><span>Shop Categories</span>
                     </button>
                     <ul className="dropdown-menu">
-                      <li><Link className="dropdown-item" to="/">Action</Link></li>
-                      <li><Link className="dropdown-item" to="/">Another action</Link></li>
-                      <li><Link className="dropdown-item" to="/">Something else here</Link></li>
+                      <li><Link className="dropdown-item" to="/">Laptops</Link></li>
+                      <li><Link className="dropdown-item" to="/">Tablets</Link></li>
+                      <li><Link className="dropdown-item" to="/">Headphones</Link></li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
                 <div className="menu-links">
-                  <div className="d-flex align-items-center gap-30">
+                  <div className="d-flex align-items-center gap-30 px-4">
                     <NavLink to="/" className="text-white">Home</NavLink>
                     <NavLink to="/store" className="text-white">Our Store</NavLink>
                     <NavLink to="/blogs" className="text-white">Blogs</NavLink>
